@@ -297,7 +297,7 @@ public class Main {
                 ((tictactoe[0][0] == tictactoe[1][1]) && (tictactoe[1][1] == tictactoe[2][2])) ||
                 ((tictactoe[0][2] == tictactoe[1][1]) && (tictactoe[1][1] == tictactoe[2][0]))) {
             System.out.println("WE HAVE A WINNER!!");
+            System.exit(0);
         }
-        System.exit(0);
     }
 }
