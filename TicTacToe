@@ -1,0 +1,303 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        String[][] tictactoe =  {{" 1 ", " 2 ", " 3 "}, {" 4 ", " 5 ", " 6 "}, {" 7 ", " 8 ", " 9 "}};
+
+        System.out.println("Please enter player one name");
+        String playerONe = s.nextLine();
+        System.out.println("You will play as X");
+        System.out.println("Please enter player one name");
+        String playerTwo = s.nextLine();
+        System.out.println("You will play as O");
+
+        System.out.println("Here is you game board, let's start!");
+        printBoardGame(tictactoe);
+
+        System.out.println("Please pick a number on the board to enter your move " + playerONe);
+        int moveOne = s.nextInt();
+        if (moveOne == 1){
+            tictactoe[0][0] = " X ";}
+        if (moveOne == 2){
+            tictactoe[0][1] = " X ";}
+        if (moveOne == 3){
+            tictactoe[0][2] = " X ";}
+        if (moveOne == 4){
+            tictactoe[1][0] = " X ";}
+        if (moveOne == 5){
+            tictactoe[1][1] = " X ";}
+        if (moveOne == 6){
+            tictactoe[1][2] = " X ";}
+        if (moveOne == 7){
+            tictactoe[2][0] = " X ";}
+        if (moveOne == 8){
+            tictactoe[2][1] = " X ";}
+        if (moveOne == 9){
+            tictactoe[2][2] = " X ";}
+
+        printBoardGame(tictactoe);
+
+        System.out.println("Please pick a number on the board to enter your move " + playerTwo);
+        while (true) {
+            int moveTwo = s.nextInt();
+            if (moveTwo == moveOne) {
+                System.out.println("THIS CELL IS TAKEN! CHOOSE A DIFFRACT NUMBER");
+                continue;
+            }
+            if (moveTwo == 1){
+                tictactoe[0][0] = " O ";}
+            if (moveTwo == 2){
+                tictactoe[0][1] = " O ";}
+            if (moveTwo == 3){
+                tictactoe[0][2] = " O ";}
+            if (moveTwo == 4){
+                tictactoe[1][0] = " O ";}
+            if (moveTwo == 5){
+                tictactoe[1][1] = " O ";}
+            if (moveTwo == 6){
+                tictactoe[1][2] = " O ";}
+            if (moveTwo == 7){
+                tictactoe[2][0] = " O ";}
+            if (moveTwo == 8){
+                tictactoe[2][1] = " O ";}
+            if (moveTwo == 9){
+                tictactoe[2][2] = " O ";}
+
+            printBoardGame(tictactoe);
+
+            System.out.println("Please pick a number on the board to enter your move " + playerONe);
+            while (true) {
+                int moveThree = s.nextInt();
+                if (moveThree == moveOne || moveThree == moveTwo) {
+                    System.out.println("THIS CELL IS TAKEN! CHOOSE A DIFFRACT NUMBER");
+                    continue;}
+                if (moveThree == 1){
+                    tictactoe[0][0] = " X ";}
+                if (moveThree == 2){
+                    tictactoe[0][1] = " X ";}
+                if (moveThree == 3){
+                    tictactoe[0][2] = " X ";}
+                if (moveThree == 4){
+                    tictactoe[1][0] = " X ";}
+                if (moveThree == 5){
+                    tictactoe[1][1] = " X ";}
+                if (moveThree == 6){
+                    tictactoe[1][2] = " X ";}
+                if (moveThree == 7){
+                    tictactoe[2][0] = " X ";}
+                if (moveThree == 8){
+                    tictactoe[2][1] = " X ";}
+                if (moveThree == 9){
+                    tictactoe[2][2] = " X ";}
+
+                printBoardGame(tictactoe);
+
+                System.out.println("Please pick a number on the board to enter your move " + playerTwo);
+                while (true) {
+                    int moveFour = s.nextInt();
+                    if (moveFour == moveOne || moveFour == moveTwo || moveFour == moveThree) {
+                        System.out.println("THIS CELL IS TAKEN! CHOOSE A DIFFRACT NUMBER");
+                        continue;}
+                    if (moveFour == 1){
+                        tictactoe[0][0] = " O ";}
+                    if (moveFour == 2){
+                        tictactoe[0][1] = " O ";}
+                    if (moveFour == 3){
+                        tictactoe[0][2] = " O ";}
+                    if (moveFour == 4){
+                        tictactoe[1][0] = " O ";}
+                    if (moveFour == 5){
+                        tictactoe[1][1] = " O ";}
+                    if (moveFour == 6){
+                        tictactoe[1][2] = " O ";}
+                    if (moveFour == 7){
+                        tictactoe[2][0] = " O ";}
+                    if (moveFour == 8){
+                        tictactoe[2][1] = " O ";}
+                    if (moveFour == 9){
+                        tictactoe[2][2] = " O ";}
+
+                    printBoardGame(tictactoe);
+
+                    System.out.println("Please pick a number on the board to enter your move " + playerONe);
+                    while (true) {
+                        int moveFive = s.nextInt();
+                        if (moveFive == moveOne || moveFive == moveTwo || moveFive == moveThree || moveFive == moveFour) {
+                            System.out.println("THIS CELL IS TAKEN! CHOOSE A DIFFRACT NUMBER");
+                            continue;}
+                        if (moveFive == 1){
+                            tictactoe[0][0] = " X ";}
+                        if (moveFive == 2){
+                            tictactoe[0][1] = " X ";}
+                        if (moveFive == 3){
+                            tictactoe[0][2] = " X ";}
+                        if (moveFive == 4){
+                            tictactoe[1][0] = " X ";}
+                        if (moveFive == 5){
+                            tictactoe[1][1] = " X ";}
+                        if (moveFive == 6){
+                            tictactoe[1][2] = " X ";}
+                        if (moveFive == 7){
+                            tictactoe[2][0] = " X ";}
+                        if (moveFive == 8){
+                            tictactoe[2][1] = " X ";}
+                        if (moveFive == 9){
+                            tictactoe[2][2] = " X ";}
+
+                        printBoardGame(tictactoe);
+                        SetWinner(tictactoe);
+
+                        System.out.println("Please pick a number on the board to enter your move " + playerTwo);
+                        while (true) {
+                            int moveSix = s.nextInt();
+                            if (moveSix == moveOne || moveSix == moveTwo || moveSix == moveThree || moveSix == moveFour || moveSix == moveFive) {
+                                System.out.println("THIS CELL IS TAKEN! CHOOSE A DIFFRACT NUMBER");
+                                continue;}
+                            if (moveSix == 1){
+                                tictactoe[0][0] = " O ";}
+                            if (moveSix == 2){
+                                tictactoe[0][1] = " O ";}
+                            if (moveSix == 3){
+                                tictactoe[0][2] = " O ";}
+                            if (moveSix == 4){
+                                tictactoe[1][0] = " O ";}
+                            if (moveSix == 5){
+                                tictactoe[1][1] = " O ";}
+                            if (moveSix == 6){
+                                tictactoe[1][2] = " O ";}
+                            if (moveSix == 7){
+                                tictactoe[2][0] = " O ";}
+                            if (moveSix == 8){
+                                tictactoe[2][1] = " O ";}
+                            if (moveSix == 9){
+                                tictactoe[2][2] = " O ";}
+
+                            printBoardGame(tictactoe);
+                            SetWinner(tictactoe);
+
+                            System.out.println("Please pick a number on the board to enter your move " + playerONe);
+                            while (true) {
+                                int moveSeven = s.nextInt();
+                                if (moveSeven == moveOne || moveSeven == moveTwo || moveSeven == moveThree || moveSeven == moveFour || moveSeven == moveFive || moveSeven == moveSix) {
+                                    System.out.println("THIS CELL IS TAKEN! CHOOSE A DIFFRACT NUMBER");
+                                    continue;}
+                                if (moveSeven == 1){
+                                    tictactoe[0][0] = " X ";}
+                                if (moveSeven == 2){
+                                    tictactoe[0][1] = " X ";}
+                                if (moveSeven == 3){
+                                    tictactoe[0][2] = " X ";}
+                                if (moveSeven == 4){
+                                    tictactoe[1][0] = " X ";}
+                                if (moveSeven == 5){
+                                    tictactoe[1][1] = " X ";}
+                                if (moveSeven == 6){
+                                    tictactoe[1][2] = " X ";}
+                                if (moveSeven == 7){
+                                    tictactoe[2][0] = " X ";}
+                                if (moveSeven == 8){
+                                    tictactoe[2][1] = " X ";}
+                                if (moveSeven == 9){
+                                    tictactoe[2][2] = " X ";}
+
+                                printBoardGame(tictactoe);
+                                SetWinner(tictactoe);
+
+                                System.out.println("Please pick a number on the board to enter your move " + playerTwo);
+                                while (true) {
+                                    int moveEight = s.nextInt();
+                                    if (moveEight == moveOne || moveEight == moveTwo || moveEight == moveThree || moveEight == moveFour || moveEight == moveFive || moveEight == moveSix || moveEight == moveSeven) {
+                                        System.out.println("THIS CELL IS TAKEN! CHOOSE A DIFFRACT NUMBER");
+                                        continue;}
+                                    if (moveEight == 1){
+                                        tictactoe[0][0] = " O ";}
+                                    if (moveEight == 2){
+                                        tictactoe[0][1] = " O ";}
+                                    if (moveEight == 3){
+                                        tictactoe[0][2] = " O ";}
+                                    if (moveEight == 4){
+                                        tictactoe[1][0] = " O ";}
+                                    if (moveEight == 5){
+                                        tictactoe[1][1] = " O ";}
+                                    if (moveEight == 6){
+                                        tictactoe[1][2] = " O ";}
+                                    if (moveEight == 7){
+                                        tictactoe[2][0] = " O ";}
+                                    if (moveEight == 8){
+                                        tictactoe[2][1] = " O ";}
+                                    if (moveEight == 9){
+                                        tictactoe[2][2] = " O ";}
+
+                                    printBoardGame(tictactoe);
+                                    SetWinner(tictactoe);
+
+                                    System.out.println("Please pick a number on the board to enter your move " + playerONe);
+                                    while (true) {
+                                        int moveNine = s.nextInt();
+                                        if (moveNine == moveOne || moveNine == moveTwo || moveNine == moveThree || moveNine == moveFour || moveNine == moveFive || moveNine == moveSix || moveNine == moveSeven || moveNine == moveEight) {
+                                            System.out.println("THIS CELL IS TAKEN! CHOOSE A DIFFRACT NUMBER");
+                                            continue;}
+                                        if (moveNine == 1){
+                                            tictactoe[0][0] = " X ";}
+                                        if (moveNine == 2){
+                                            tictactoe[0][1] = " X ";}
+                                        if (moveNine == 3){
+                                            tictactoe[0][2] = " X ";}
+                                        if (moveNine == 4){
+                                            tictactoe[1][0] = " X ";}
+                                        if (moveNine == 5){
+                                            tictactoe[1][1] = " X ";}
+                                        if (moveNine == 6){
+                                            tictactoe[1][2] = " X ";}
+                                        if (moveNine == 7){
+                                            tictactoe[2][0] = " X ";}
+                                        if (moveNine == 8){
+                                            tictactoe[2][1] = " X ";}
+                                        if (moveNine == 9){
+                                            tictactoe[2][2] = " X ";}
+                                        if(
+                                                ((tictactoe[0][0] == tictactoe[0][1]) && (tictactoe[0][1] == tictactoe[0][2])) ||
+                                                        ((tictactoe[1][0] == tictactoe[1][1]) && (tictactoe[1][1] == tictactoe[1][2])) ||
+                                                        ((tictactoe[2][0] == tictactoe[2][1]) && (tictactoe[2][1] == tictactoe[2][2])) ||
+                                                        ((tictactoe[0][0] == tictactoe[1][0]) && (tictactoe[1][0] == tictactoe[2][0])) ||
+                                                        ((tictactoe[0][1] == tictactoe[1][1]) && (tictactoe[1][1] == tictactoe[2][1])) ||
+                                                        ((tictactoe[0][2] == tictactoe[1][2]) && (tictactoe[1][2] == tictactoe[2][2])) ||
+                                                        ((tictactoe[0][0] == tictactoe[1][1]) && (tictactoe[1][1] == tictactoe[2][2])) ||
+                                                        ((tictactoe[0][2] == tictactoe[1][1]) && (tictactoe[1][1] == tictactoe[2][0]))){
+                                            System.out.println("WE HAVE A WINNER!!");
+                                            return;}
+                                        else System.out.println("OPSS! NO ONE WIN! please restart the game if you want to try again");
+                                        return;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    public static void printBoardGame(String[][] tictactoe) {
+        for (int i = 0; i < tictactoe.length; i++) {
+            for (int j = 0; j < tictactoe[i].length; j++) {
+                System.out.print(tictactoe[i][j]);
+            }
+            System.out.println();
+        }
+    }
+    public static void SetWinner(String [][]tictactoe) {
+        if (((tictactoe[0][0] == tictactoe[0][1]) && (tictactoe[0][1] == tictactoe[0][2])) ||
+                ((tictactoe[1][0] == tictactoe[1][1]) && (tictactoe[1][1] == tictactoe[1][2])) ||
+                ((tictactoe[2][0] == tictactoe[2][1]) && (tictactoe[2][1] == tictactoe[2][2])) ||
+                ((tictactoe[0][0] == tictactoe[1][0]) && (tictactoe[1][0] == tictactoe[2][0])) ||
+                ((tictactoe[0][1] == tictactoe[1][1]) && (tictactoe[1][1] == tictactoe[2][1])) ||
+                ((tictactoe[0][2] == tictactoe[1][2]) && (tictactoe[1][2] == tictactoe[2][2])) ||
+                ((tictactoe[0][0] == tictactoe[1][1]) && (tictactoe[1][1] == tictactoe[2][2])) ||
+                ((tictactoe[0][2] == tictactoe[1][1]) && (tictactoe[1][1] == tictactoe[2][0]))) {
+            System.out.println("WE HAVE A WINNER!!");
+        }
+        System.exit(0);
+    }
+}
